@@ -31,3 +31,59 @@ nav {
 nav span a {
   color: seashell;
 }
+
+
+{{!-- MISSION --}}
+
+div.container {
+  height: 700px;
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/Users/noahkardos-fein/code/projects/teacozy/resources/images/img-mission-background.jpg);
+}
+
+div.mission_words {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 1200px;
+}
+
+{{!-- FEATURED TEA --}}
+
+div.featured_words_content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 1000px;
+}
+
+div.words {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.steeping_container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  width: 1000px;
+}
+
+.steeping_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.steeping_card img {
+  height: 200px;
+  width: 300px;
+}
