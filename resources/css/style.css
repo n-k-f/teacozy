@@ -3,20 +3,37 @@ body {
   font-size: 22px;
   color: seashell;
   background-color: black;
+  margin: 0;
   opacity: 0.9;
 }
 
-header {
-  display: inline-flex;
-  position: fixed;
-  height: 69px;
-  width: 100%;
-  border-bottom: 1px solid seashell;
-  justify-content: space-between;
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-header.nav span {
-  text-decoration: underline;
+a {
+  color: seashell;
+}
+
+h2 {
+  margin: 0;
+  padding: 10px;
+}
+
+/* HEADER SECTION */
+
+header {
+  display: flex;
+  height: 69px;
+  width: 100%;
+  position: fixed;
+  background-color: black;
+  border-bottom: 1px solid seashell;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
 }
 
 .logo {
@@ -25,23 +42,35 @@ header.nav span {
 }
 
 nav {
+  text-align: right;
+  flex-grow: 1;
   padding-right: 10px;
 }
 
-nav span a {
-  color: seashell;
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
 }
 
+/* MAIN SECTION */
 
-{{!-- MISSION --}}
+.main{
+  padding-top: 69px;
+  opacity: 0.9;
+  width: 1200px;
+  margin: auto;
+}
 
-div.container {
+/* MISSION */
+
+div.mission_container {
   height: 700px;
   width: 1200px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: url(/Users/noahkardos-fein/code/projects/teacozy/resources/images/img-mission-background.jpg);
+  padding-top: 69px;
 }
 
 div.mission_words {
@@ -86,4 +115,21 @@ div.words {
 .steeping_card img {
   height: 200px;
   width: 300px;
+}
+
+{{!-- LOCATIONS CONTENT --}}
+
+.locations_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/Users/noahkardos-fein/code/projects/teacozy/resources/images/img-locations-background.jpg);
+  height: 500px;
+}
+
+.location_card {
+  width: 300px;
+  height: 300px;
+  padding-top: 15px
 }
