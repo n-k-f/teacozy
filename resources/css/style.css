@@ -5,6 +5,7 @@ body {
   background-color: black;
   margin: 0;
   opacity: 0.9;
+  text-align: center;
 }
 
 .flex-container {
@@ -17,10 +18,11 @@ a {
   color: seashell;
 }
 
-h2 {
+h2, h3, h4 {
   margin: 0;
   padding: 10px;
 }
+
 
 /* HEADER SECTION */
 
@@ -63,73 +65,60 @@ nav span {
 
 /* MISSION */
 
-div.mission_container {
+#mission {
   height: 700px;
-  width: 1200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-image: url(/Users/noahkardos-fein/code/projects/teacozy/resources/images/img-mission-background.jpg);
   padding-top: 69px;
 }
 
-div.mission_words {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+#mission .content {
   background-color: black;
-  width: 1200px;
+  width: 100%;
+  margin: auto;
 }
 
-{{!-- FEATURED TEA --}}
+/* FEATURED TEA */
 
-div.featured_words_content {
+#featuredtea {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  height: 700px;
   width: 1000px;
-}
-
-div.words {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.steeping_container {
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: space-around;
-  width: 1000px;
+  padding-top: 70px;
+  margin: auto;
 }
 
 .steeping_card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 5px;
 }
 
 .steeping_card img {
   height: 200px;
-  width: 300px;
+  margin: 10px;
 }
 
-{{!-- LOCATIONS CONTENT --}}
+/* LOCATIONS CONTENT */
 
-.locations_content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+#locations {
   background-image: url(/Users/noahkardos-fein/code/projects/teacozy/resources/images/img-locations-background.jpg);
   height: 500px;
+  padding-top: 70px;
+}
+
+#locations flex-container {
+  margin: auto;
+  width: 1100px;
 }
 
 .location_card {
   width: 300px;
   height: 300px;
-  padding-top: 15px
+  padding: 10px;
+  margin: 5px 20px;
+  background-color: black;
+  flex-basis: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
 }
