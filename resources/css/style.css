@@ -67,7 +67,7 @@ nav span {
 
 #mission {
   height: 700px;
-  background-image: url(https://github.com/n-k-f/teacozy/blob/master/resources/images/img-mission-background.jpg);
+  background-image: url(https://github.com/n-k-f/teacozy/blob/master/resources/images/img-mission-background.jpg?raw=true);
   padding-top: 69px;
 }
 
@@ -102,7 +102,7 @@ nav span {
 /* LOCATIONS CONTENT */
 
 #locations {
-  background-image: url(https://github.com/n-k-f/teacozy/blob/master/resources/images/img-locations-background.jpg);
+  background-image: url(https://github.com/n-k-f/teacozy/blob/master/resources/images/img-locations-background.jpg?raw=true);
   padding-top: 70px;
   height: 500px;
 }
